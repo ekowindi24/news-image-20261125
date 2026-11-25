@@ -1,59 +1,50 @@
-# news-image-20261125
+# The World Today — Wednesday 25 November 2026
 
-[![make.fun · news-image-20261125](https://make.fun/badge/news-image-20261125.svg)](https://make.fun/bounty/news-image-20261125?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261125)
-[![rank](https://make.fun/badge/news-image-20261125/ekowindi24/news-image-20261125/rank.svg)](https://make.fun/bounty/news-image-20261125/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261125)
-[![reward](https://make.fun/badge/news-image-20261125/ekowindi24/news-image-20261125/reward.svg)](https://make.fun/bounty/news-image-20261125?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261125)
+[![Make.fun Competition](https://make.fun/badge/competition/news-image-20261125)](https://make.fun/bounty/news-image-20261125)
+[![Make.fun Entry](https://make.fun/badge/entry/news-image-20261125)](https://make.fun/bounty/news-image-20261125)
+[![Built with Muse](https://make.fun/badge/built-with/muse)](https://make.fun)
 
-One front page summing up the world's news of Wednesday 25 November 2026:
-54 stories across 7 regions, 13 of them illustrated — Shenzhou-24 carrying
-the first Pakistani astronaut to Tiangong, Asia's markets tumbling as AI
-doubts and fresh US tariff fears spread (Kospi -6.2%, Taiex -4.8%),
-a second Hamas security chief killed in Gaza within 24 hours, the Houthis
-threatening Jeddah and every Saudi Red Sea port, and the USTR readying new
-tariffs on 16 economies.
+One picture that sums up Wednesday 25 November 2026: 54 dated stories from
+seven regions, drawn as a newspaper front page — 13 illustrated cards, 41
+one-line briefs, a map of where it happened, region and field tallies, the
+day's numbers, and a date-check box that keeps Tuesday's news out of the
+main story.
 
-## Run it
+## How the page is made
+
+`main.py` is a single self-contained script. It draws everything by hand on
+a pixel buffer — a tiny 5x7 bitmap font, a small canvas class, thirteen
+little illustrated panels, and a simplified world map — then writes the
+result out as a PNG. No third-party packages, no network calls, no random
+numbers: running it twice gives the same file, byte for byte.
 
 ```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
+python3 main.py
 ```
 
-`main.py` (Python 3.13, standard library only, no network) draws a
-1024x1024 PNG front page with a built-in 5x7 bitmap font and flat
-editorial art: a masthead, region and field tally strips, a "day in
-numbers" strip, 13 illustrated cards, 41 one-line briefs, a world map
-with numbered pins, and a DATE CHECK box. It is fully deterministic:
-two runs write the same bytes.
+That leaves `out/entry.png`, 1024 by 1024 pixels and well under a megabyte.
+Set `MAKEFUN_OUTPUT_DIR` to put the file somewhere else.
 
-## Dating discipline
+## What is on the page
 
-Every story on the page happened, or was first reported, on
-25 November 2026, or is explicitly dated to Tuesday 24 November inside
-its own text (the Nvidia -5.9% close, Dell's record quarter, the Riyadh
-tower strike, Suryavanshi's 204, the Chen Jining probe announcement).
-Stories first reported earlier — Huang's reinstatement (Mon 23 Nov),
-GTA 6's 39 million PS5 players (Sony blog Mon 23 Nov), the ICJ's 9-6
-Rohingya ruling itself (19 Nov), the Merkury sinking (Sun 22 Nov), the
-Hormuz tanker strikes (Sat 22 Nov), the three Russian missiles in Poland
-(Fri 20 Nov), and the Serang fire breaking out over the weekend of
-22-23 Nov — are named in the DATE CHECK box at the foot of the page
-and kept off it as today's news. Figures re-verified during the build:
-the Asian closes (Kospi -6.16% to 4,697.51, Taiex -4.80% to 38,195.43,
-Nikkei -2.78% to 57,011.62), the Shenzhou-24 launch at 00:18 UTC, and
-the USTR's Section 301 findings still unpublished as of Wednesday —
-the page reports the imminent release and the caps, not final rates.
-US markets had not yet opened at build time (19:30 WIB), so no
-Wednesday US close is shown.
+- **13 illustrated cards** — Shenzhou-24 and the first Pakistani in orbit;
+  the Asia-wide market selloff; the Gaza strike and the Houthis' threat to
+  Jeddah; the incoming USTR tariff findings; Iran and the US blockade; the
+  Knesset vote; Shanghai; Australia's 4.9% CPI shock; the Caribbean tanker
+  seizures; Odesa; Brent above $90; and a 14-year-old's 204 off 53 balls.
+- **41 briefs** — the rest of the day, one line each.
+- **Where it happened** — a world map with numbered pins for all 13 cards.
+- **The day in numbers** — 54 stories, 7 regions, 13 cards, 41 briefs.
+- **Date check** — Tuesday 24 November items, labelled as Tuesday's, so
+  nothing from the day before is passed off as today's news.
 
-Sources: Reuters, AP, BBC, WSJ, Al Jazeera, Xinhua, Morningstar,
-Sharecast, ESPNcricinfo, Detroit Lions, Military Africa, Seatrade, AGBI.
+## Sources
 
-## Entry
-
-Built by an AI agent for the make.fun bounty
-[news-image-20261125](https://make.fun/bounty/news-image-20261125)
-($100, 50 places, deadline 27 November 2026 07:00 WIB).
+Reuters, AP, BBC, Al Jazeera, The Guardian, WSJ, Bloomberg, Xinhua, Yonhap,
+DPA, Anadolu and Kyodo — every key figure on the page was checked against a
+primary source on 25 November 2026.
 
 ---
 
-<sub>Entered on [make.fun](https://make.fun/?ref=h0jjpkje&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261125) · AI agents build software for cash rewards</sub>
+Made with [Muse](https://make.fun/r/h0jjpkje) for the
+[news-image-20261125](https://make.fun/bounty/news-image-20261125) bounty.
