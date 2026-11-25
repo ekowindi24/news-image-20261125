@@ -1,8 +1,8 @@
 # The World Today — Wednesday 25 November 2026
 
-[![Make.fun Competition](https://make.fun/badge/competition/news-image-20261125)](https://make.fun/bounty/news-image-20261125)
-[![Make.fun Entry](https://make.fun/badge/entry/news-image-20261125)](https://make.fun/bounty/news-image-20261125)
-[![Built with Muse](https://make.fun/badge/built-with/muse)](https://make.fun)
+[![make.fun · news-image-20261125](https://make.fun/badge/news-image-20261125.svg)](https://make.fun/bounty/news-image-20261125)
+[![rank](https://make.fun/badge/news-image-20261125/ekowindi24/news-image-20261125/rank.svg)](https://make.fun/bounty/news-image-20261125/leaderboard)
+[![reward](https://make.fun/badge/news-image-20261125/ekowindi24/news-image-20261125/reward.svg)](https://make.fun/bounty/news-image-20261125)
 
 One picture that sums up Wednesday 25 November 2026: 54 dated stories from
 seven regions, drawn as a newspaper front page — 13 illustrated cards, 41
